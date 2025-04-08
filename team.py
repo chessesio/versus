@@ -3,10 +3,15 @@
 class Team:
     def __init__(self):
         self.squad = {}
+        self.staff = {}
         self.getSquad()
-
-    def addToSquad(self, player):
-        pass
+        self.getStaff()
 
     def getSquad(self):
+        pass
+
+    def getStaff(self):
+        pass
+
+    def printTeam(self):
         pass
