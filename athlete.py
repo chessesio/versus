@@ -1,29 +1,15 @@
 # module to hold and mutate athlete data (players, coaches, etc.)
 
-from enum import Enum
 
-class PlayerPosition(Enum):
-    FORWARD = "forward"
-    MIDFIELDER = "midfielder"
-    DEFENDER = "defender"
-    GOALKEEPER = "goalKeeper"
-
-
-class CoachRole(Enum):
-    HEADCOACH = "headCoach"
-    ASTCOACH = "astCoach"
+class Player:
+    def __init__(self, id, fName, lName, role, number=None, position=None):
+        self._id = id
+        self._fName = fName
+        self._lName = lName
+        self._role = role
+        self._number = number
+        self._position = position
 
 
-class Athlete:
-    def __init__(self, FName, LName, Number=None, Position=None):
-        self.id = None
-        self.FName = FName
-        self.LName = LName
-        self.Number = Number
-        self.Position = Position
-
-
-class Player(Athlete):
-    def __init__(self, Number, Position):
-        self.Number = Number
-        self.Position = Position
+    def addPlayer(self):
+        pass
